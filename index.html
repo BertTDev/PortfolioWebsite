@@ -29,7 +29,8 @@
 		            <img class="profile-image img-fluid w-25 float-start rounded-circle" src="assets/images/profile.jpg" alt="profile image" />
 		            <div class="profile-content">
 		                <h1 class="name">Bertie Taylor</h1>
-		                <h2 class="desc">Video Games Programmer</h2>
+		                <h2 class="desc" style="display:inline">Associate Physics Programmer </h2>
+                        <h2 class="desc2" style="display:inline">@ Rockstar North</h2>
 		                <ul class="social list-inline">
 		                    <li class="list-inline-item"><a href="https://twitter.com/BertieBerto"><i class="fab fa-twitter"></i></a></li>
 		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/bertie-taylor-772b44229/"><i class="fab fa-linkedin-in"></i></a></li>
@@ -45,111 +46,138 @@
 
     <div class="container sections-wrapper py-5">
         <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>Hello and Welcome! I am Bertie, an aspiring games developer, eager to find a junior role within the
-                              industry on completion of my Masters in Games Engineering this Summer. Please, check out some of my past projects below, I've aimed to
-                              attach Repos where I can and you should even be able to access one of my games online!
-                            </p>
-                            <p>Currently, I am leading development on a team-based paint FPS within a team of 8 - specifically designing online networking necessary for
-                              the engine. I have also begun development of Fish simulations making use of boid simulations for my Masters dissertation and hope I'll  be able
-                              to share progress here soon.
-                            </p>
-                            <p> More informally, I'm an avid connoisseur of Games (yes I know Skyrim is a decade old, yes I still play it), Sport (I play too much tennis and watch
-                              too much football), and Cooking (I've even got experience as a Commis Chef!). If you like (or dislike) any of those things feel free to hit me up on Twitter and
-                              blast me with your opinions!
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-                <section class="latest section">
+            <div class="primary col-lg-7 col-12">
+            <section class="latest section">
                   <div class="section-inner shadow-sm rounded">
                     <h2 class="heading">My Projects</h2>
                     <div class="content">
 
-                      <div class="item row">
-                        <a class="col-md-4 col-12" href="https://youtu.be/d3QBWsWabas" target="_blank">
-                          <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/TableTilter2077.png" alt="TableTilter2077" />
-                        </a>
+                        <div class="item row">
+                            <a class="col-md-4 col-12" href="https://berttdev.github.io/Trove/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Trove.png" alt="Trove" />
+                            </a>
+                            <div class="desc col-md-8 col-12">
+                                <h3 class="title">Trove - a Procedural Arcade Platformer</h3>
+                                <p class="mb-2">
+                                    Designed and Implemented a procedural 2D arcade platformer within the Unity game engine.
+                                    Developed a player controller and a simple enemy AI and spawning system.
+                                    Made use of singleton design patterns for a consistent game manager between scenes and wrote a simple procedural level generator
+                                    and item spawner to provide variety and longevity to the game.
+                                </p>
+                                <p>
+                                    <a class="more-link" href="https://github.com/BertTDev/Trove-Source" target="_blank"><i class="fab fa-github"></i>Check out the Source Code</a>
+                                    &emsp;&emsp;<a class="more-link" href="https://berttdev.github.io/Trove/" target="_blank"><i class="fas fa-gamepad"></i>Check out the Game</a>
+                                </p>
+                            </div><!--//desc-->
+                        </div><!--//item-->
 
-                        <div class="desc col-md-8 col-12">
-                          <h3 class="title">Table Tilter 2077 - Physics Engine + AI</h3>
-                          <p class="mb-2">
-Implemented a Physics Engine including Collision Detection and Resolution (via normal and frictional impulses), Rigid Body Physics and Constraints.
- Made use of this to develop a physics-based game, introducing state-based AIs relying on implementation of the A* pathfinding algorithm.
- Also coded collision body, Quadtree and A* visualisations to enable easier debugging.
-                          </p>
-                          <p><a class="more-link" href="https://github.com/BertTDev/TableTilter-2077" target="_blank"><i class="fab fa-github"></i>Check out the Source Code</a>
-                          &emsp;&emsp;<a class="more-link" href="https://youtu.be/d3QBWsWabas" target="_blank"><i class="fab fa-youtube"></i>Check out the Video</a></p>
-                        </div><!--//desc-->
-                      </div><!--//item-->
+                        <div class="item row">
+                            <a class="col-md-4 col-12" href="https://www.youtube.com/watch?v=vToxR81y-0g" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/BoidsSim.png" alt="BoidsSim" />
+                            </a>
+                            <div class="desc col-md-8 col-12">
+                                <h3 class="title">
+                                    Refinements of the Flocking Algorithm via Spatial Acceleration Structures
+                                </h3>
+                                <p class="mb-2">
+                                    Explored performance improvements to Boid simulations via the use of various spatial acceleration structures.
+                                    From the ground up in C++ bin lattice subdivision and variations on Octree solutions were developed and profiled to
+                                    complete a first class masters dissertation detailing implementation and enhancements to framerate and memory usage.
+                                </p>
+                                <p>
+                                    <a class="more-link" href="https://github.com/BertTDev/boids_simulations" target="_blank"><i class="fab fa-github"></i>Check out the Source Code</a>
+                                    &emsp;&emsp;<a class="more-link" href="https://www.youtube.com/watch?v=vToxR81y-0g" target="_blank"><i class="fab fa-youtube"></i>Check out the Video</a>
+                                </p>
+                            </div><!--//desc-->
+                        </div><!--//item-->
+
+                        <div class="item row">
+                            <a class="col-md-4 col-12" href="https://youtu.be/d3QBWsWabas" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/TableTilter2077.png" alt="TableTilter2077" />
+                            </a>
+
+                            <div class="desc col-md-8 col-12">
+                                <h3 class="title">Table Tilter 2077 - Physics Engine + AI</h3>
+                                <p class="mb-2">
+                                    Implemented a Physics Engine including Collision Detection and Resolution (via normal and frictional impulses), Rigid Body Physics and Constraints.
+                                    Made use of this to develop a physics-based game, introducing state-based AIs relying on implementation of the A* pathfinding algorithm.
+                                    Also coded collision body, Quadtree and A* visualisations to enable easier debugging.
+                                </p>
+                                <p>
+                                    <a class="more-link" href="https://github.com/BertTDev/TableTilter-2077" target="_blank"><i class="fab fa-github"></i>Check out the Source Code</a>
+                                    &emsp;&emsp;<a class="more-link" href="https://youtu.be/d3QBWsWabas" target="_blank"><i class="fab fa-youtube"></i>Check out the Video</a>
+                                </p>
+                            </div><!--//desc-->
+                        </div><!--//item-->
 
 
-                      <div class="item row">
-                        <a class="col-md-4 col-12" href="https://youtu.be/FJYzRsHUFW0" target="_blank">
-                          <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/GraphicsIsland.png" alt="GraphicsIsland" />
-                        </a>
-                        <div class="desc col-md-8 col-12">
-                          <h3 class="title">Graphics Island - Graphics Engine + Advanced GL Shaders</h3>
-                          <p class="mb-2">
-Developed a Graphics Engine on top of the minimal NCLGL framework provided.
-Implemented skeletal animations, scene graphs, forward rendered lighting and post-processing effects making use of frame buffers.
-Focus was given to a water shader which made use of advanced techniques such as screen space reflections and dudv mapping.
-                          </p>
-                          <p><a class="more-link" href="https://github.com/BertTDev/Graphics-Island" target="_blank"><i class="fab fa-github"></i>Check out the Source Code</a>
-                          &emsp;&emsp;<a class="more-link" href="https://youtu.be/FJYzRsHUFW0" target="_blank"><i class="fab fa-youtube"></i>Check out the Video</a></p>
-                        </div><!--//desc-->
-                      </div><!--//item-->
+                        <div class="item row">
+                            <a class="col-md-4 col-12" href="https://youtu.be/FJYzRsHUFW0" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/GraphicsIsland.png" alt="GraphicsIsland" />
+                            </a>
+                            <div class="desc col-md-8 col-12">
+                                <h3 class="title">Graphics Island - Graphics Engine + Advanced GL Shaders</h3>
+                                <p class="mb-2">
+                                    Developed a Graphics Engine on top of the minimal NCLGL framework provided.
+                                    Implemented skeletal animations, scene graphs, forward rendered lighting and post-processing effects making use of frame buffers.
+                                    Focus was given to a water shader which made use of advanced techniques such as screen space reflections and dudv mapping.
+                                </p>
+                                <p>
+                                    <a class="more-link" href="https://github.com/BertTDev/Graphics-Island" target="_blank"><i class="fab fa-github"></i>Check out the Source Code</a>
+                                    &emsp;&emsp;<a class="more-link" href="https://youtu.be/FJYzRsHUFW0" target="_blank"><i class="fab fa-youtube"></i>Check out the Video</a>
+                                </p>
+                            </div><!--//desc-->
+                        </div><!--//item-->
 
-
-                      <div class="item row">
-                        <a class="col-md-4 col-12" href="https://berttdev.github.io/Trove/" target="_blank">
-                          <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Trove.png" alt="Trove" />
-                        </a>
-                        <div class="desc col-md-8 col-12">
-                          <h3 class="title">Trove - a Procedural Arcade Platformer</h3>
-                          <p class="mb-2">
-Designed and Implemented a procedural 2D arcade platformer within the Unity game engine.
- Developed a player controller and a simple enemy AI and spawning system.
- Made use of singleton design patterns for a consistent game manager between scenes and wrote a simple procedural level generator
-and item spawner to provide variety and longevity to the game.
-                          </p>
-                          <p><a class="more-link" href="https://github.com/BertTDev/Trove-Source" target="_blank"><i class="fab fa-github"></i>Check out the Source Code</a>
-                          &emsp;&emsp;<a class="more-link" href="https://berttdev.github.io/Trove/" target="_blank"><i class="fas fa-gamepad"></i>Check out the Game</a></p>
-                        </div><!--//desc-->
-                      </div><!--//item-->
-
-
-                      <div class="item row">
-                        <a class="col-md-4 col-12" href="A Qualitative Analysis and Framework for Well Designed Video Game Tutorials - Bertie Taylor.pdf" target="_blank">
-                          <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Dissertation.png" alt="DissFramework" />
-                        </a>
-                        <div class="desc col-md-8 col-12">
-                          <h3 class="title">A Qualitative Analysis and Framework for Well Designed Video Game Tutorials - A Dissertation</h3>
-                          <p class="mb-2">
-Produced a framework for well-designed video game tutorials by making use of research on educational theories for multimedia as well as
- primary user research done using a variety of 12 tutorials produced in Unity. Variations were done on Instructional Scaffolding, Dual Coding and Cognitive Apprenticeship.
- Derived a framework via the use of qualitative analysis techniques.
-                          </p>
-                          <p><a class="more-link" href="A Qualitative Analysis and Framework for Well Designed Video Game Tutorials - Bertie Taylor.pdf" target="_blank"><i class="fas fa-paperclip"></i>Check out the Dissertation</a></p>
-                        </div><!--//desc-->
-                      </div><!--//item-->
+                        <div class="item row">
+                            <a class="col-md-4 col-12" href="A Qualitative Analysis and Framework for Well Designed Video Game Tutorials - Bertie Taylor.pdf" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Dissertation.png" alt="DissFramework" />
+                            </a>
+                            <div class="desc col-md-8 col-12">
+                                <h3 class="title">A Qualitative Analysis and Framework for Well Designed Video Game Tutorials - A Dissertation</h3>
+                                <p class="mb-2">
+                                    Produced a framework for well-designed video game tutorials by making use of research on educational theories for multimedia as well as
+                                    primary user research done using a variety of 12 tutorials produced in Unity. Variations were done on Instructional Scaffolding, Dual Coding and Cognitive Apprenticeship.
+                                    Derived a framework via the use of qualitative analysis techniques.
+                                </p>
+                                <p><a class="more-link" href="A Qualitative Analysis and Framework for Well Designed Video Game Tutorials - Bertie Taylor.pdf" target="_blank"><i class="fas fa-paperclip"></i>Check out the Dissertation</a></p>
+                            </div><!--//desc-->
+                        </div><!--//item-->
 
                     </div><!--//section-inner-->
                 </section><!--//section-->
             </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
+            <div class="secondary col-lg-5 col-12">
+                <aside class="about me aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>
+                                Hi there! I'm Bertie, a passionate and dedicated games programmer with experience in a multitude of areas in game development, 
+                                from physics to graphics to AI, making use of modern game engines such as Unity and working on custom-built tech in C++. 
+                                I thrive in collaborative environments and enjoy working with others to create innovative solutions to complex problems.
+                            </p>
+                            <p>
+                                Since completing my Masters in Video Games Engineering last summer, I entered straight into the games industry as a physics programmer with Rockstar
+                                where I have been commended for my tenacity, my eye for detail and my creative problem-solving skills. I've developed my programming and debugging skills
+                                to a new level gaining experience at at top company at the cutting edge of game development, constantly learning and collaborating with my team.
+                            </p>
+                            <p>
+                                Outside of work, I enjoy staying up-to-date with the latest developments in the gaming industry and experimenting with new game design ideas.
+                                I'm always on the lookout for new challenges and opportunities to learn and grow as a developer.
+                            </p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//aside-->
+
+                <aside class="info aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Newcastle Upon Tyne, UK</li>
                                 <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">bertietaylor7@gmail.com</a></li>
                                 <li><i class="fas fa-paperclip"></i><span class="sr-only">CV:</span><a href="Bertie Taylor.pdf">Check Out My CV Here</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Edinburgh, Scotland, UK</li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -159,13 +187,15 @@ Produced a framework for well-designed video game tutorials by making use of res
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Education</h2>
                         <div class="content">
-                          <div class="item">
+                            <div class="item">
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> MComp Computer Science (Games Engineering)</h3>
-                                <p class="intro">Newcastle University, 2017-2022</p>
+                                <p class="intro">First Class &bullet; Newcastle University, 2017-2022</p>
                                 <h3 class="title"> Modules studied include:</h3>
-                                <p class="intro"> Advanced Programming for Games &bullet; Advanced Graphics for Games &bullet; Advanced Game Technologies &bullet; Engineering Gaming Solutions within a Team
-                                 &bullet; Advanced Interaction Design &bullet; Biologically Inspired Computing &bullet; Dissertations in both 3rd and 4th year</p>
-                               </div>
+                                <p class="intro">
+                                    Advanced Programming for Games &bullet; Advanced Graphics for Games &bullet; Advanced Game Technologies &bullet; Engineering Gaming Solutions within a Team
+                                    &bullet; Advanced Interaction Design &bullet; Biologically Inspired Computing &bullet; Dissertations in both 3rd and 4th year
+                                </p>
+                            </div>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
@@ -174,25 +204,11 @@ Produced a framework for well-designed video game tutorials by making use of res
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
-                              <p class="intro">
-                                Engine Programming • C++ (3 years) • OpenGL • GLSL • Version Control (GitHub) • Gameplay
-Programming • Unity • C# (3 years) • Android Development • Java • ML Fundamentals •
- User-Centric Design • Agile Development • HCI Methodologies • Trello • Visual Studio
-                              </p>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <aside class="list music aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Programming Playlist Vibes</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=5qap5aO4i9A">Lofi Girl - beats to relax/study to</a></li>
-                                <li><i class="fas fa-gamepad"></i> <a href="https://www.youtube.com/watch?v=2JsYHpiH2xs&t=4734s">Celeste Soundtrack</a></li>
-                                <li><i class="fab fa-spotify"></i> <a href="https://open.spotify.com/playlist/37i9dQZF1DWXpOtMyVOt4Q?si=7186ac55792a40ae">Soundscapes for Gaming</a></li>
-                                <li><i class="fas fa-guitar"></i> <a href="https://open.spotify.com/album/4FKOLaEGqA7ZFYYW5r4X9z?si=8lJnE4Y_QyuVZkTMohRmaA">Seventeen Going Under - Sam Fender</a></li>
-                            </ul>
+                            <p class="intro">
+                                Engine Programming • C++ (4 years) • OpenGL • GLSL • Version Control (Perforce/ Git) • Gameplay Programming • Unity •
+                                C# (4 years) • Android Development • Java • Machine Learning Fundamentals • Team Projects • User-Centric Design • 
+                                Agile Development • HCI Methodologies • Trello • Visual Studio
+                            </p>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
